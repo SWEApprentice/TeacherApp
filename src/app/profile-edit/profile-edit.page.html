@@ -1,66 +1,86 @@
 <ion-header>
   <ion-toolbar>
-   <ion-item >
-       <ion-icon name="close"></ion-icon>
-     <ion-title>profile</ion-title>
-   </ion-item>
-   
+    <ion-row>
+
+      <ion-col >
+          <ion-icon name="close"></ion-icon>
+      </ion-col>
+  
+  
+          <ion-col class="col1">
+            โปรไฟล์
+          </ion-col>
+        
+  
+        <ion-col class="col2">
+            <ion-icon name="checkmark"></ion-icon>
+          </ion-col>
+  
+     </ion-row>
  </ion-toolbar>
  
 </ion-header>
 
 <ion-content>
 
+      <ion-item> 
+
+        <ion-row>
+          
+        <ion-col >
+        
+
       <ion-avatar class="kkk">
         <img  src="https://cdn2.iconfinder.com/data/icons/ui-1/60/05-512.png">
       </ion-avatar>
      
- 
-   
+            
+</ion-col > 
+
+<ion-icon class="kk" name="build"></ion-icon>
+
+</ion-row>        
+</ion-item>
 
 
         <ion-item> 
-            <ion-label>Status</ion-label>
-            <input type="text" value="{{student.Status}}">
+            <ion-label>สถานะ</ion-label>
+            <input type="text" value="">
             </ion-item>
             
             
 
          <ion-item> 
-             <ion-label>name</ion-label>
-             <input type="text" value="{{student.name}}">
+             <ion-label>ชื่อ</ion-label>
+             <input type="text" value="">
              </ion-item>
             
              
 
          <ion-item> 
-            <ion-label>lastname</ion-label>
-            <input type="text" value="{{student.lastname}}">
+            <ion-label>นามสกุล</ion-label>
+            <input type="text" value="">
             </ion-item>
             
             
 
          <ion-item> 
-            <ion-label>address</ion-label>
-            <input type="text" value="{{student.address}}">
+            <ion-label>ที่อยู่</ion-label>
+            <input type="text" value="">
            </ion-item>
          
             
 
          <ion-item> 
-            <ion-label>IDcard</ion-label>
-            <input type="text" value="{{student.IDcard}}">
+            <ion-label>เลขบัตรประชาชน</ion-label>
+            <input type="text" value="">
             </ion-item>
             
             
          <ion-item> 
-           <ion-label>number</ion-label>
-           <input type="text" value="{{student.number}}">
+           <ion-label>ที่อยู่</ion-label>
+           <input type="text" value="">
            </ion-item>
            
-<div style="text-align: center">         
-<ion-button>
-   ตกลง   
-</ion-button>
-</div>
+
 </ion-content>
