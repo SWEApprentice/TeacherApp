@@ -1,14 +1,21 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-item ><ion-icon name="close"></ion-icon>
-      <ion-title>ผลงาน</ion-title></ion-item>
-      
-  </ion-toolbar>
+  <ion-item >
+    <ion-icon name="close"></ion-icon>
+      <ion-title class="text-title">ผลงาน</ion-title>
+  </ion-item>
 </ion-header>
 
 <ion-content>
+  <ion-row>
+    
+    <ion-col class="img-Slides">
+      
+    </ion-col>
+
+  </ion-row>
+
   <ion-item *ngFor = "let item of ListItem">
-      <ion-slides pager>
+      <ion-slides pager >
         <ion-slide >
             <img src= {{item.img1}} />
         </ion-slide>
@@ -21,7 +28,7 @@
       </ion-slides>
       <ion-card-header>
       </ion-card-header>
-      <ion-card-content>
+      <ion-card-content class="Text-Content">
         {{item.name}}
         {{item.data}}
       </ion-card-content>
