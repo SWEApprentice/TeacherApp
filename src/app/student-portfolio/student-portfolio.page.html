@@ -25,8 +25,31 @@
                 {{item.name}}
             </ion-card-header>
               <ion-card-content>
-                {{item.data}}
+                <ion-row>
+                  {{item.detail}}
+                </ion-row>
+                <ion-row>
+                  <ion-footer>
+                    {{item.data}}
+                  </ion-footer>
+                </ion-row>
               </ion-card-content>
         </ion-col>
   </ion-row>
+  <ion-footer>
+    <ion-row class = "footer">
+      <ion-col >
+          <ion-icon name="images"></ion-icon>
+      </ion-col>
+      <ion-col >
+          <ion-icon name="qr-scanner"></ion-icon>
+        </ion-col>
+        <ion-col >
+            <ion-icon name="sad"></ion-icon>
+        </ion-col>
+        <ion-col >
+            <ion-icon name="logo-flickr"></ion-icon>
+        </ion-col>
+    </ion-row>
+  </ion-footer>
 </ion-content>
