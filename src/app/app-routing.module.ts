@@ -6,7 +6,8 @@ const routes: Routes = [
   { path: 'student-list', loadChildren: './student-list/student-list.module#StudentListPageModule' },
   { path: 'student-profile', loadChildren: './student-profile/student-profile.module#StudentProfilePageModule' },
   { path: 'student-portfolio', loadChildren: './student-portfolio/student-portfolio.module#StudentPortfolioPageModule' },
-  { path: 'student-save', loadChildren: './student-save/student-save.module#StudentSavePageModule' }
+  { path: 'student-save', loadChildren: './student-save/student-save.module#StudentSavePageModule' },
+  { path: 'profile-edit', loadChildren: './profile-edit/profile-edit.module#ProfileEditPageModule' }
 ];
 @NgModule({
   imports: [
