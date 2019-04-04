@@ -6,31 +6,27 @@
 </ion-header>
 
 <ion-content>
-  <ion-row>
-    
-    <ion-col class="img-Slides">
-      
-    </ion-col>
-
+  <ion-row *ngFor = "let item of ListItem">
+        <ion-col>
+            <ion-slides pager >
+                <ion-slide >
+                    <img src= {{item.img1}} />
+                </ion-slide>
+                <ion-slide >
+                    <img src= {{item.img2}} />
+                </ion-slide>
+                <ion-slide >
+                    <img src= {{item.img3}} />
+                </ion-slide>
+              </ion-slides>
+        </ion-col>
+        <ion-col>
+            <ion-card-header>
+                {{item.name}}
+            </ion-card-header>
+              <ion-card-content>
+                {{item.data}}
+              </ion-card-content>
+        </ion-col>
   </ion-row>
-
-  <ion-item *ngFor = "let item of ListItem">
-      <ion-slides pager >
-        <ion-slide >
-            <img src= {{item.img1}} />
-        </ion-slide>
-        <ion-slide >
-            <img src= {{item.img2}} />
-        </ion-slide>
-        <ion-slide >
-            <img src= {{item.img3}} />
-        </ion-slide>
-      </ion-slides>
-      <ion-card-header>
-      </ion-card-header>
-      <ion-card-content class="Text-Content">
-        {{item.name}}
-        {{item.data}}
-      </ion-card-content>
-  </ion-item>
 </ion-content>
