@@ -7,7 +7,9 @@ const routes: Routes = [
   { path: 'student-profile', loadChildren: './student-profile/student-profile.module#StudentProfilePageModule' },
   { path: 'student-portfolio', loadChildren: './student-portfolio/student-portfolio.module#StudentPortfolioPageModule' },
   { path: 'student-save', loadChildren: './student-save/student-save.module#StudentSavePageModule' },
-  { path: 'profile-edit', loadChildren: './profile-edit/profile-edit.module#ProfileEditPageModule' }
+  { path: 'profile-edit', loadChildren: './profile-edit/profile-edit.module#ProfileEditPageModule' },
+  { path: 'student-score', loadChildren: './student-score/student-score.module#StudentScorePageModule' },
+  { path: 'student-evo', loadChildren: './student-evo/student-evo.module#StudentEvoPageModule' }
 ];
 @NgModule({
   imports: [
