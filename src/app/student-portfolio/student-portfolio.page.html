@@ -1,55 +1,50 @@
 <ion-header>
   <ion-item >
     <ion-icon name="close"></ion-icon>
-      <ion-title class="text-title">ผลงาน</ion-title>
+    <ion-title class="text-title">ผลงาน</ion-title>
   </ion-item>
 </ion-header>
 
 <ion-content>
-  <ion-row *ngFor = "let item of ListItem">
-        <ion-col>
-            <ion-slides pager >
-                <ion-slide >
-                    <img src= {{item.img1}} />
-                </ion-slide>
-                <ion-slide >
-                    <img src= {{item.img2}} />
-                </ion-slide>
-                <ion-slide >
-                    <img src= {{item.img3}} />
-                </ion-slide>
-              </ion-slides>
-        </ion-col>
-        <ion-col>
-            <ion-card-header>
-                {{item.name}}
-            </ion-card-header>
-              <ion-card-content>
-                <ion-row>
-                  {{item.detail}}
-                </ion-row>
-                <ion-row>
-                  <ion-footer>
-                    {{item.data}}
-                  </ion-footer>
-                </ion-row>
-              </ion-card-content>
-        </ion-col>
-  </ion-row>
-  <ion-footer>
-    <ion-row class = "footer">
-      <ion-col >
-          <ion-icon name="images"></ion-icon>
+  <ion-row *ngFor="let item of List">
+    <ion-card>
+      <ion-col class = "col">
+        <ion-slides pager>
+          <ion-slide >
+            <img src={{item.img1}}>
+          </ion-slide>
+          <ion-slide >
+            <img src={{item.img2}}>
+          </ion-slide>
+          <ion-slide >
+            <img src={{item.img3}}>
+          </ion-slide>
+        </ion-slides>
       </ion-col>
       <ion-col >
-          <ion-icon name="qr-scanner"></ion-icon>
-        </ion-col>
-        <ion-col >
-            <ion-icon name="sad"></ion-icon>
-        </ion-col>
-        <ion-col >
-            <ion-icon name="logo-flickr"></ion-icon>
-        </ion-col>
-    </ion-row>
-  </ion-footer>
+        <ion-card-header>
+          {{item.name}}
+        </ion-card-header>
+        <ion-card-content>
+          {{item.data}}
+        </ion-card-content>
+      </ion-col>
+    </ion-card>
+  </ion-row>
 </ion-content>
+<ion-footer>
+  <ion-row class = "row">
+    <ion-col >
+        <ion-icon name="images"></ion-icon>
+    </ion-col>
+    <ion-col >
+        <ion-icon name="qr-scanner"></ion-icon>
+    </ion-col>
+    <ion-col >
+        <ion-icon name="sad"></ion-icon>
+    </ion-col>
+    <ion-col >
+        <ion-icon name="logo-flickr"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-footer>

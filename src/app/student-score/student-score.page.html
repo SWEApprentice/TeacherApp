@@ -1,9 +1,35 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Student Score</ion-title>
-  </ion-toolbar>
+  <ion-row>
+    <ion-toolbar>
+      <ion-col >
+        <ion-icon name="close"></ion-icon>
+      </ion-col>
+      <ion-col >
+        Student Score
+      </ion-col>
+      <ion-col >
+        <button ion-button >OK</button>
+      </ion-col>
+    </ion-toolbar>
+  </ion-row>
 </ion-header>
 
 <ion-content>
-
+  <ion-card *ngFor="let item of score">
+    <ion-card-header>
+      {{item.name}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-col >
+        เต็ม
+      <br>100
+      </ion-col>
+      <ion-col>
+        คะแนน
+        <ion-row>
+          <ion-input type="number" value=""></ion-input>
+        </ion-row>
+      </ion-col>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
