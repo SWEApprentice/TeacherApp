@@ -1,9 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>StudentPortfolio</ion-title>
+    <ion-item ><ion-icon name="close"></ion-icon>
+      <ion-title>ผลงาน</ion-title></ion-item>
+      
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-item *ngFor = "let item of ListItem">
+      <ion-slides pager>
+        <ion-slide >
+            <img src= {{item.img1}} />
+        </ion-slide>
+        <ion-slide >
+            <img src= {{item.img2}} />
+        </ion-slide>
+        <ion-slide >
+            <img src= {{item.img3}} />
+        </ion-slide>
+      </ion-slides>
+      <ion-card-header>
+      </ion-card-header>
+      <ion-card-content>
+        {{item.name}}
+        {{item.data}}
+      </ion-card-content>
+  </ion-item>
 </ion-content>
