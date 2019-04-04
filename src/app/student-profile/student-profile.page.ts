@@ -12,5 +12,6 @@ export class StudentProfilePage  {
     lastname: "เมืองลพ",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQow52wL55qRJdIYSGgZnSHOmM6bWGMXfMGbstqu_WyCqpo-UQR",
   }
+  
 
 }
