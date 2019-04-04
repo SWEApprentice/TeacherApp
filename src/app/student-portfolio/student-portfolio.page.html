@@ -1,50 +1,56 @@
 <ion-header>
-  <ion-item >
-    <ion-icon name="close"></ion-icon>
-    <ion-title class="text-title">ผลงาน</ion-title>
-  </ion-item>
+  <ion-toolbar >
+    <ion-row>
+      <ion-col >
+          <ion-icon name="close"></ion-icon>
+      </ion-col>
+      <ion-col class= "header1">
+          <ion-title>ผลงาน</ion-title>
+        </ion-col>
+        <ion-col class= "header2">
+            <ion-icon name="checkmark"></ion-icon>
+          </ion-col>
+    </ion-row>
+    
+  </ion-toolbar>  
 </ion-header>
 
 <ion-content>
-  <ion-row *ngFor="let item of List">
-    <ion-card>
+  <ion-card>
+    <ion-row>
       <ion-col class = "col">
-        <ion-slides pager>
+        <ion-slides pager = true>
           <ion-slide >
-            <img src={{item.img1}}>
+            <img src="{{Test.img}}" alt="">
           </ion-slide>
-          <ion-slide >
-            <img src={{item.img2}}>
-          </ion-slide>
-          <ion-slide >
-            <img src={{item.img3}}>
-          </ion-slide>
+          
         </ion-slides>
       </ion-col>
       <ion-col >
-        <ion-card-header>
-          {{item.name}}
-        </ion-card-header>
-        <ion-card-content>
-          {{item.data}}
-        </ion-card-content>
+          <ion-card-header>
+            {{Test.name}}
+            </ion-card-header>
+            <ion-card-content>
+              00/00/0000
+            </ion-card-content>
       </ion-col>
-    </ion-card>
-  </ion-row>
+    </ion-row>
+  </ion-card>
 </ion-content>
+
 <ion-footer>
-  <ion-row class = "row">
+  <ion-row class = "footer">
     <ion-col >
         <ion-icon name="images"></ion-icon>
     </ion-col>
     <ion-col >
         <ion-icon name="qr-scanner"></ion-icon>
-    </ion-col>
-    <ion-col >
-        <ion-icon name="sad"></ion-icon>
-    </ion-col>
-    <ion-col >
-        <ion-icon name="logo-flickr"></ion-icon>
-    </ion-col>
+      </ion-col>
+      <ion-col >
+          <ion-icon name="sad"></ion-icon>
+        </ion-col>
+        <ion-col >
+            <ion-icon name="logo-flickr"></ion-icon>
+          </ion-col>
   </ion-row>
 </ion-footer>
