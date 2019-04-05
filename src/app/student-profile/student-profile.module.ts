@@ -44,7 +44,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: '../student-portfolio/student-portfolio.module#StudentProfolioPageModule'
+        loadChildren: '../student-portfolio/student-portfolio.module#StudentPortfolioPageModule'
       }
     ]
   },
@@ -53,7 +53,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: '../profile-edit/profile-edit.module#ProfileEditfolioPageModule'
+        loadChildren: '../profile-edit/profile-edit.module#ProfileEditPageModule'
       }
     ]
   },
