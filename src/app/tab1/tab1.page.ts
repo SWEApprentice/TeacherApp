@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page { 
+export class Tab1Page  { 
   Level = {
   class : "1",
   room : "1",
@@ -34,10 +34,12 @@ Liststudent = [
   {image : "https://www.plazacool.com/attachments/product/images_1-1708853.jpg ",
   name: "ด.ญ.โอ๋",
   lastname:"นามสมบัติ"},
-
-
-
-
-
 ];
+
+constructor(
+  public route: NavController
+) { }
+goProfile(){
+  this.route.navigateBack('/student-profile')
+}
 }
