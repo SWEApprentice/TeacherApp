@@ -16,23 +16,31 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
+  <ion-card *ngFor="let item of List">
     <ion-row>
       <ion-col class = "col">
         <ion-slides pager = true>
           <ion-slide >
-            <img src="{{Test.img}}" alt="">
+            <img src="{{item.img1}}">
           </ion-slide>
-          
+          <ion-slide >
+            <img src="{{item.img2}}">
+          </ion-slide>
+          <ion-slide >
+            <img src="{{item.img3}}">
+          </ion-slide>
         </ion-slides>
       </ion-col>
       <ion-col >
           <ion-card-header>
-            {{Test.name}}
-            </ion-card-header>
-            <ion-card-content>
-              00/00/0000
-            </ion-card-content>
+            {{item.name}}
+          </ion-card-header>
+          <ion-card-content>
+            รายละเอียด.......
+          </ion-card-content>
+          <ion-footer class = "card-footer">
+            {{item.data}}
+          </ion-footer>
       </ion-col>
     </ion-row>
   </ion-card>
