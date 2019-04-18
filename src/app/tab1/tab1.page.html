@@ -7,11 +7,11 @@
 </ion-header>
 <ion-searchbar placeholder="ชื่อนักเรียน" ></ion-searchbar>
 <ion-content>
-    <ion-label>อนุบาล {{ Level.class }}/{{ Level.room }}</ion-label>
-   <ion-item *ngFor ="let item of Liststudent" (click)="goProfile()" >
+    <ion-label>อนุบาล </ion-label>
+   <ion-item *ngFor ="let item of data" (click)="goProfile(item)" >
      <ion-avatar item-left>
        <img src="{{item.image}}">
      </ion-avatar>
-     <ion-label>&nbsp;{{ item.name }} &nbsp;{{ item.lastname }}</ion-label>
+     <ion-label>&nbsp;{{item.name}} &nbsp;{{item.lastname}}</ion-label>
    </ion-item>
 </ion-content>
